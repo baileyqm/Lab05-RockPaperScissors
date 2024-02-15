@@ -126,10 +126,12 @@ public class RockPaperScissorsFrame extends JFrame {
         ImageIcon rockImg = new ImageIcon(System.getProperty("user.dir") + "/src/RockPaperScissors/RockImage.png");
         ImageIcon paperImg = new ImageIcon(System.getProperty("user.dir") + "/src/RockPaperScissors/PaperImage.png");
         ImageIcon scissorsImg = new ImageIcon(System.getProperty("user.dir") + "/src/RockPaperScissors/ScissorsImage.png");
+        ImageIcon quitImg = new ImageIcon(System.getProperty("user.dir") + "/src/RockPaperScissors/QuitImage.png");
+
         rockBtn.setIcon(rockImg);
         paperBtn.setIcon(paperImg);
         scissorsBtn.setIcon(scissorsImg);
-        quitBtn.setText("Quit!");
+        quitBtn.setIcon(quitImg);
 
         rockBtn.addActionListener(e -> {
             playerCrtPlay = 0;
